@@ -5,9 +5,9 @@
 
 my_list = ['2018-01-01', 'yandex', 'cpc', 100]
 
-result = my_list[-1]
+result = my_list.pop()
 
-for item in my_list[::-1]:
+for item in reversed(my_list):
     result = {item: result}
 
 print(result)
